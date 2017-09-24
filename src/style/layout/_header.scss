@@ -1,0 +1,39 @@
+.header{
+  height: $header-height;
+  .top-line{
+    height: 60px;
+    border-bottom: 1px solid #f0f2f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    .link-block{
+      a{
+        text-decoration: none;
+        display: inline-block;
+        >*{
+          vertical-align: middle;
+        }
+        &:nth-child(2){
+          margin-left: 20px;
+        }
+        i{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .header-block{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    .top-menu{
+      display: flex;
+      list-style: none;
+      li{
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+  }
+}

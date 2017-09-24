@@ -1,0 +1,73 @@
+$ic-mail-name: 'ic-mail';
+$ic-mail-x: 0px;
+$ic-mail-y: 0px;
+$ic-mail-offset-x: 0px;
+$ic-mail-offset-y: 0px;
+$ic-mail-width: 18px;
+$ic-mail-height: 11px;
+$ic-mail-total-width: 27px;
+$ic-mail-total-height: 23px;
+$ic-mail-image: '/images/sprite.png';
+$ic-mail: (0px, 0px, 0px, 0px, 18px, 11px, 27px, 23px, '/images/sprite.png', 'ic-mail', );
+$ic-phone-name: 'ic-phone';
+$ic-phone-x: 0px;
+$ic-phone-y: 11px;
+$ic-phone-offset-x: 0px;
+$ic-phone-offset-y: -11px;
+$ic-phone-width: 12px;
+$ic-phone-height: 12px;
+$ic-phone-total-width: 27px;
+$ic-phone-total-height: 23px;
+$ic-phone-image: '/images/sprite.png';
+$ic-phone: (0px, 11px, 0px, -11px, 12px, 12px, 27px, 23px, '/images/sprite.png', 'ic-phone', );
+$we-name: 'we';
+$we-x: 18px;
+$we-y: 0px;
+$we-offset-x: -18px;
+$we-offset-y: 0px;
+$we-width: 9px;
+$we-height: 9px;
+$we-total-width: 27px;
+$we-total-height: 23px;
+$we-image: '/images/sprite.png';
+$we: (18px, 0px, -18px, 0px, 9px, 9px, 27px, 23px, '/images/sprite.png', 'we', );
+$spritesheet-width: 27px;
+$spritesheet-height: 23px;
+$spritesheet-image: '/images/sprite.png';
+$spritesheet-sprites: ($ic-mail, $ic-phone, $we, );
+$spritesheet: (27px, 23px, '/images/sprite.png', $spritesheet-sprites, );
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
