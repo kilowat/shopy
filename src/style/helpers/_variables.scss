@@ -2,19 +2,27 @@
 $font-path: '/fonts/';
 $font-open-sans: 'Open Sans';
 $font-roboto: 'Roboto';
-
 $font-size: 16px;
 /////////////////////////////////////
+
+////__path to media__/////
+$img: '../images/';
+//////////////////////////
 
 ////___typography property____//////
 $base-line-height: 1.5;
 
 ////____text colors property___//////
-//$color-primary:
-//$color-acent:
-//$color-secondary:
-
 $color-black: #000;
+$color-dark : #34404b;
+$color-grey: #f4f6f8;
+$color-orange: #ff6f32;
+
+$color-primary: $color-grey;
+$color-acent: $color-orange;
+$color-secondary: $color-dark;
+
+
 ////////////////////////////////////
 
 ////////___size of layouts___///////

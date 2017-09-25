@@ -1,5 +1,8 @@
 .header{
   height: $header-height;
+  @include breakpoint(max-width 980px){
+    height: auto;
+  }
   .top-line{
     height: 60px;
     border-bottom: 1px solid #f0f2f4;
@@ -7,6 +10,9 @@
     justify-content: space-between;
     align-items: center;
     font-size: 0.8em;
+    @include breakpoint(max-width 980px){
+      display: none;
+    }
     .link-block{
       a{
         text-decoration: none;
@@ -22,17 +28,60 @@
         }
       }
     }
+    .soc-block{
+      ul{
+        list-style: none;
+        >li{
+          display: inline-block;
+          margin-left: 10px;
+        }
+      }
+    }
   }
   .header-block{
     height: 120px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    @include breakpoint(max-width 980px){
+      height: 60px;
+    }
+    .left-block{
+      display: flex;
+      align-items: center;
+    }
     .top-menu{
       display: flex;
       list-style: none;
+      @include breakpoint(max-width 980px){
+        display: none;
+      }
       li{
         margin-right: 20px;
         margin-left: 20px;
+        a{
+          text-decoration: none;
+        }
+      }
+    }
+    .cart-block{
+      a{
+        margin-left: 20px;
+      }
+      .ic-cart{
+        position: relative;
+        .cart-count{
+          position: absolute;
+          background-color: $color-secondary;
+          color: #fff;
+          border-radius: 100%;
+          left: 6px;
+          top: -10px;
+          text-align: center;
+          font-size: 8px;
+          height: 12px;
+          width: 12px;
+        }
       }
     }
   }

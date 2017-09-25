@@ -4,9 +4,14 @@ html{
   line-height: $base-line-height;
 }
 body {
-
+  color: $color-secondary;
 }
-
+a{
+  color: $color-secondary;
+  &:hover, &.selected{
+    color: $color-acent;
+  }
+}
 main {
    min-height: calc(100vh - (#{$footer-height} + #{$header-height}));
 }
@@ -40,4 +45,25 @@ i{
 }
 .ic-mail{
   @include sprite($ic-mail);
+}
+.ic-fb{
+  @include sprite($ic-fb);
+}
+.ic-google{
+  @include sprite($ic-google);
+}
+.ic-tw{
+  @include sprite($ic-tw);
+}
+.ic-inst{
+  @include sprite($ic-inst);
+}
+.ic-search{
+  @include sprite($ic-search);
+}
+.ic-user{
+  @include sprite($ic-user);
+}
+.ic-cart{
+  @include sprite($ic-cart);
 }

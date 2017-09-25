@@ -46,6 +46,7 @@
     "gulp.spritesmith": "^6.5.1",
     "jquery": "^2.2.1",
     "lodash": "^4.6.1",
+    "rollup-plugin-babel": "^3.0.2",
     "smart-grid": "^1.1.0"
   }
 }

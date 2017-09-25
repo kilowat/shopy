@@ -8,7 +8,7 @@ let srcDir = 'src',
 export default {
     entries: {
         style: [`./${ srcDir }/style/screen.scss`],
-        js: [`./${ srcDir }/js/app.js`]
+        js: [`./${ srcDir }/js/app.js`],
     },
     vendor: {
         js: [
@@ -23,6 +23,7 @@ export default {
         style: `${ srcDir }/style/**/*.scss`,
         fonts: [`${ srcDir }/fonts/**/*.*`],
         images: `${ srcDir }/images/**/*.{gif,jpg,png,svg}`,
+        imagesDir: [`./${ srcDir }/images/`],
         sprite: `${ srcDir }/sprites/*.png`
     },
     dest: {
