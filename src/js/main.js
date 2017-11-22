@@ -2,6 +2,8 @@ $(document).ready(function(){
 
   $('.product-slider').slick({
     slidesToShow: 4,
+    dots: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 768,

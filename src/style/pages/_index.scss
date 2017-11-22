@@ -15,15 +15,33 @@
         text-align:center;
         text-align: center;
 
+        &:hover{
+          .item-content{
+              box-shadow: 1px 1px 9px 2px rgba(147, 147, 147, 0.3);
+          }
+          .pic img{
+            max-width:20%;
+          }
+        }
         .item-content{
+          height: 380px;
           margin:10px;
-          background-color: #ccc;
+          background-color: #fff;
+          padding-top:30px;
+          padding-bottom: 30px;
+          transition: box-shadow 0.3s ease-in-out;
         }
         .pic{
           text-align: center;
+          cursor:pointer;
           img{
             display: inline-block;
+            max-width: 100%;
           }
+        }
+        .name{
+          margin-top:20px;
+          margin-bottom: 20px;
         }
     }
   }
