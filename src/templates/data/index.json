@@ -1,3 +1,50 @@
 {
-	"title":"New project"
+	"title":"New project",
+	"products": [
+		{
+			"pic": "./images/product-1.png",
+			"name": "Reebok Track Jacket",
+			"price": 100
+		},
+		{
+			"pic": "./images/product-2.png",
+			"name": "Reebok Track Jacket",
+			"price": 100
+		},
+		{
+			"pic": "./images/product-2.png",
+			"name": "Reebok Track Jacket",
+			"price": 100
+		},
+		{
+			"pic": "./images/product-1.png",
+			"name": "Reebok Track Jacket",
+			"price": 100
+		},
+		{
+			"pic": "./images/product-2.png",
+			"name": "Reebok Track Jacket",
+			"price": 100
+		},
+		{
+			"pic": "./images/product-2.png",
+			"name": "Reebok Track Jacket",
+			"price": 100
+		},
+		{
+			"pic": "./images/product-1.png",
+			"name": "Reebok Track Jacket",
+			"price": 100
+		},
+		{
+			"pic": "./images/product-2.png",
+			"name": "Reebok Track Jacket",
+			"price": 100
+		},
+		{
+			"pic": "./images/product-2.png",
+			"name": "Reebok Track Jacket",
+			"price": 100
+		}
+	]
 }

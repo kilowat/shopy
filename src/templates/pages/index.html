@@ -2,23 +2,53 @@
 {% block content %}
 <div class="main-slider">
 	<div class="slide-block" style="background-image:url(../images/slider-1.jpg)">
-	</div>
-	<div class="wrapper">
-		<div class="product-text">
-			<div class="product-name">
-				Full winter kit
-			</div>
-			<div class="product-descr">
-				Half jacket + Skiny trousers + Boot leather
-			</div>
-			<div class="product-dop-text">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-			</div>
-			<div class="product-buy-line">
-				
+		<div class="wrapper">
+			<div class="product-text">
+				<div class="product-name">
+					Full winter kit
+				</div>
+				<div class="product-descr">
+					Half jacket + Skiny trousers + Boot leather
+				</div>
+				<div class="product-dop-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				</div>
+				<div class="product-buy-line">
+
+				</div>
 			</div>
 		</div>
-		
+	</div>
+</div>
+
+<div class="section-header-block">
+	<div class="wrapper text-center">
+		<h2><span class="acent-color">NEW</span> ARRIVALS</h2>
+		<div class="descr-text">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+		</div>
+	</div>
+</div>
+
+<div class="product-slider-block">
+	<div class="wrapper">
+		<div class="product-slider">
+		{% for product in products %}
+				<div class="item">
+					<div class="item-content">
+						<div class="pic">
+							<img src="{{ product.pic }}" alt="">
+						</div>
+						<div class="name">
+							<a href="#" title="">{{ product.name }}</a>
+						</div>
+						<div class="price">
+							<span class="price">{{ product.price }}</span>
+						</div>
+					</div>
+				</div>
+		{%endfor%}
+		</div>
 	</div>
 </div>
 

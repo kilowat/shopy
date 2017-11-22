@@ -25,7 +25,7 @@ class Css {
             .pipe($.plumber(config.plumber))
             .pipe($.sourcemaps.init(config.sourceMap.init))
             .pipe($.sass(config.sass).on('error', errorHandler))
-            .pipe($.minifyCss(config.minifyCss))
+            //.pipe($.minifyCss(config.minifyCss))
             .pipe($.autoprefixer(config.autoprefixer))
             .pipe($.sourcemaps.write('./', config.sourceMap.write))
             .pipe($.remember('style'))

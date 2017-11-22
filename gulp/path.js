@@ -13,7 +13,8 @@ export default {
     vendor: {
         js: [
             './node_modules/jquery/dist/jquery.js',
-            './node_modules/lodash/lodash.js'
+            './node_modules/lodash/lodash.js',
+            './node_modules/slick-carousel/slick/slick.js'
         ]
     },
     all: {

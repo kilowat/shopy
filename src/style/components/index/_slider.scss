@@ -3,5 +3,24 @@
     height: 600px;
     background-color: #ccc;
     background-size: cover;
+    .wrapper{
+      display: flex;
+      height: 100%;
+      align-items: center;
+      .product-text{
+        max-width: 40%;
+        text-align: center;
+        .product-name{
+          color: $color-acent;
+          font-size: 3em;
+        }
+        .product-descr{
+          margin-bottom: 0.5em
+        }
+        .product-dop-text{
+          font-size: 0.9em;
+        }
+      }
+    }
   }
 }
